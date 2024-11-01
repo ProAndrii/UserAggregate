@@ -5,6 +5,7 @@ Data sources required to be under "app" level in application.yaml file. Currentl
 
 Here is an example of data sources:
 
+```yaml
 app:
    data-sources:
       - name: {data_source_name}
@@ -17,7 +18,8 @@ app:
             username: login
             name: first_name
             surname: last_name
-
+```
 
 http://localhost:8085/swagger-ui/index.html - link to see swagger.
+
 http://localhost:8085/users - API endpoint for getting all users from all data sources from application.yaml file.
