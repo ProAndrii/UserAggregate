@@ -1,0 +1,30 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: UserAggregate
+
+app:
+  data-sources:
+    - name: data-base-1
+      url: jdbc:postgresql://localhost:5432/db1
+      table: users
+      user: postgres
+      password: root
+      mapping:
+        id: user_id
+        username: login
+        name: first_name
+        surname: last_name
+    - name: data-base-2
+      strategy: postgres
+      url: jdbc:postgresql://localhost:5432/db2
+      table: user_table
+      user: postgres
+      password: root
+      mapping:
+        id: ldap_id
+        username: ldap_login
+        name: name
+        surname: surname
