@@ -1,4 +1,4 @@
-Required JRE 21 for correcting work and skip unexpected behavior and problem. 
+JRE 21 is required for correcting work and avoiding unexpected behavior or problems. 
 By default, server use 8085 port for listing.
 
 Data sources required to be under "app" level in application.yaml file. Currently, support only PostgreSQL database.
